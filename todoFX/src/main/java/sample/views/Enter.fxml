@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.RegistrationController">
+   <children>
+      <TabPane layoutX="200.0" layoutY="85.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab closable="false" text="Вход">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="278.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleEnter" text="Вход" />
+                        <Label layoutX="223.0" layoutY="52.0" prefHeight="18.0" prefWidth="58.0" text="Логин" />
+                        <Label layoutX="223.0" layoutY="166.0" prefHeight="18.0" prefWidth="73.0" text="Пароль" />
+                        <TextField fx:id="textLoginSign" layoutX="222.0" layoutY="102.0" prefHeight="26.0" prefWidth="154.0" promptText="введите логин" />
+                        <PasswordField fx:id="passwordSign" layoutX="223.0" layoutY="210.0" prefHeight="26.0" prefWidth="154.0" promptText="введите пароль" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Регистрация">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="205.0" prefWidth="245.0">
+                     <children>
+                        <PasswordField fx:id="textPasswordReg" layoutX="226.0" layoutY="172.0" promptText="введите пароль" />
+                        <PasswordField fx:id="textAgainPasswordReg" layoutX="226.0" layoutY="257.0" promptText="повторите пароль" />
+                        <TextField fx:id="textLoginReg" layoutX="226.0" layoutY="72.0" promptText="введите логин" />
+                        <Label layoutX="226.0" layoutY="37.0" prefHeight="18.0" prefWidth="146.0" text="Логин" />
+                        <Label layoutX="227.0" layoutY="123.0" prefHeight="18.0" prefWidth="148.0" text="Пароль" />
+                        <Label layoutX="242.0" layoutY="219.0" text="Повторите пароль" />
+                        <Button layoutX="114.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleReg" text="Регистрация" AnchorPane.rightAnchor="260.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ToDoMainController">
+   <children>
+      <HBox layoutX="41.0" layoutY="29.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleNewTask" text="Добавить задачу" />
+            <Button mnemonicParsing="false" onAction="#handleEditTask" text="Изменить задачу" />
+            <Button mnemonicParsing="false" onAction="#handleDeleteTask" text="Удалить задачу" />
+            <Button mnemonicParsing="false" onAction="#handleAcceptTask" text="Завершить задачу" />
+         </children>
+      </HBox>
+      <TableView fx:id="tableToDo" layoutX="187.0" layoutY="74.0" prefHeight="227.0" prefWidth="327.0">
+        <columns>
+          <TableColumn fx:id="taskColumn" prefWidth="202.19997787475586" text="Задача" />
+          <TableColumn fx:id="deadlineColumn" prefWidth="123.40003967285156" text="Дедлайн" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="314.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleCancel" text="Категории" />
+   </children>
+</AnchorPane>
